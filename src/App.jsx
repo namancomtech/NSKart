@@ -1,5 +1,5 @@
 import Index from "../src/components/Index"
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../src/components/About"
 import Contact from "../src/components/Contact"
 function App() {
