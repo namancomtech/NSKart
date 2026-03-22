@@ -5,7 +5,7 @@ import Contact from "../src/components/Contact"
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/PropertyWebsite">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
