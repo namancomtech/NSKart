@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/esm/Col.js';
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from './Footer';
 
 export default function ShoppingList() {
     const [products, setProducts] = useState([]);
-    const a = useState("naman");
+    // const a = useState("naman");
 
     const [cart, setCart] = useState(() => {
         const savedCart = localStorage.getItem("cart");
@@ -19,7 +19,7 @@ export default function ShoppingList() {
     }, [cart]);
 
     useEffect(() => {
-        fetch("/products.json")
+        fetch(`${import.meta.env.BASE_URL}products.json`)
             .then((res) => res.json())
             .then((data) => setProducts(data.products));
     }, []);
@@ -61,7 +61,7 @@ export default function ShoppingList() {
                         <div className="card mb-3 h-100">
                             <div className="row g-0">
                                 <div className="col-md-4 text-center align-content-center">
-                                    <img src={data.imageUrl} className="img-fluid rounded-start" alt="" />
+                                    <img src={`${import.meta.env.BASE_URL}${data.imageUrl}`} className="img-fluid rounded-start" alt="" />
                                 </div>
 
                                 <div className="col-md-8">

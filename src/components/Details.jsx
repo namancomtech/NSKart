@@ -9,7 +9,7 @@ export default function Details() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch("/products.json")
+        fetch(`${import.meta.env.BASE_URL}products.json`)
             .then((res) => res.json())
             .then((data) => setItems(data.products[id - 1]));
     }, [id]);
@@ -26,7 +26,7 @@ export default function Details() {
                     </Row>
                     <Row className='mx-0'>
                         <Col  xs={12} sm={12} md={4} lg={3} className='pe-lg-5'>
-                            <img src={`/${items.imageUrl}`} alt="" className='img-fluid productImg'/>   
+                            <img src={`${import.meta.env.BASE_URL}${items.imageUrl}`} alt="" className='img-fluid productImg'/>   
                         </Col>
                         <Col  xs={12} sm={12} md={4} lg={3}>
                             <h5 className='my-4'>Top Highlights:</h5>
