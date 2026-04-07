@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from "react-router-dom";
 import { Row, Col } from 'react-bootstrap';
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import Footer from './Footer';
 
@@ -87,7 +87,7 @@ export default function ShoppingCart() {
                     {items.map((item, index) => (
                         <div className='border border-light border-3 p-3 d-flex align-items-center justify-content-between mb-4' style={{ borderRadius: "10px 10px" }} key={index}>
                             <Col md={2}>
-                                <img src={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt="" />
+                                <img src={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt={item.name} />
                             </Col>
                             <Col md={5}>
                                 <h4>{item.name}</h4>
@@ -110,7 +110,7 @@ export default function ShoppingCart() {
                                 <h5>₹ {item.price * (item.quantity || 1)}</h5>
                             </Col>
                             <Col md={1}>
-                                <a className='btn btn-danger btn-sm' onClick={() => deleteProduct(item.id)}><i className="bi bi-trash trash fs-5" ></i></a>
+                                <a className='btn btn-danger btn-sm' onClick={() => deleteProduct(item.id)}><i className="bi bi-trash fs-5" ></i></a>
                             </Col>
                         </div>
                     ))}
