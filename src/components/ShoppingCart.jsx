@@ -87,7 +87,7 @@ export default function ShoppingCart() {
                     {items.map((item, index) => (
                         <div className='border border-light border-3 p-3 d-flex align-items-center justify-content-between mb-4' style={{ borderRadius: "10px 10px" }} key={index}>
                             <Col md={2}>
-                                <img rc={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt="" />
+                                <img src={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt="" />
                             </Col>
                             <Col md={5}>
                                 <h4>{item.name}</h4>
