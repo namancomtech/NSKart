@@ -1,19 +1,19 @@
-import Index from "../src/components/Index"
-import { HashRouter, Routes, Route } from "react-router-dom";
-import About from "../src/components/About"
-import Contact from "../src/components/Contact"
-function App() {
-  return (
-    <div>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </HashRouter>
-    </div>
-  )
-}
+import { BrowserRouter, Routes, Route } from "react-router";
+import ShoppingList from "./components/ShoppingList";
+import ShoppingCart from "./components/ShoppingCart";
+import Details from "./components/Details";
 
+function App() {
+    return (
+        <div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<ShoppingList />} />
+                    <Route path="/mycart" element={<ShoppingCart />} />
+                     <Route path='/details/:id' element={<Details/>}></Route>  {/*dynamic URL */}
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
+}
 export default App

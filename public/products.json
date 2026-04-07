@@ -1,0 +1,255 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageUrl": "images/aata.jpg",
+      "name": "Aashirwaad Aata",
+      "description": "Top Quality Aata of Delhi",
+      "price": 400,
+      "highlights": {
+        "itemWeight": "10 kg",
+        "numberOfItems": "1",
+        "allergenInformation": "Wheat"
+      },
+      "itemDetails": {
+        "brandName": "Aashirvaad",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "India",
+        "manufacturer": "ITC Limited, Kolkata",
+        "customerReviews": "4.4 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "AASHIRVAAD SHUDH CHAKKI ATTA",
+          "text": "Made with 100% pure and natural whole wheat atta."
+        },
+        {
+          "title": "FINEST QUALITY ATTA",
+          "text": "4-step sourcing and grinding process ensures premium quality."
+        },
+        {
+          "title": "TRADITIONAL CHAKKI ATTA",
+          "text": "Contains 0% maida and 100% sampoorna atta."
+        },
+        {
+          "title": "NUTRITIOUS",
+          "text": "High in fibre and source of protein."
+        },
+        {
+          "title": "SOFT ROTIS",
+          "text": "Helps make soft and fluffy chapatis."
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "imageUrl": "images/chawal.jpg",
+      "name": "India Gate Basmati Rice",
+      "description": "Premium Quality Rice Grain",
+      "price": 600,
+      "highlights": {
+        "itemWeight": "5 kg",
+        "numberOfItems": "1",
+        "allergenInformation": "None"
+      },
+      "itemDetails": {
+        "brandName": "India Gate",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "India",
+        "manufacturer": "KRBL Limited",
+        "customerReviews": "4.5 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "LONG GRAIN BASMATI",
+          "text": "Premium long grain rice for superior cooking."
+        },
+        {
+          "title": "NATURAL AROMA",
+          "text": "Rich aroma enhances every meal."
+        },
+        {
+          "title": "AGED RICE",
+          "text": "Naturally aged for better texture."
+        },
+        {
+          "title": "PERFECT FOR BIRYANI",
+          "text": "Ideal for biryani, pulao and fried rice."
+        },
+        {
+          "title": "EASY TO COOK",
+          "text": "Fluffy texture after cooking."
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "imageUrl": "images/tea.jpg",
+      "name": "Tata Masala Tea",
+      "description": "Tata Chai, Desh Ki Chai",
+      "price": 90,
+      "highlights": {
+        "itemWeight": "500 g",
+        "numberOfItems": "1",
+        "allergenInformation": "None"
+      },
+      "itemDetails": {
+        "brandName": "Tata Tea",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "India",
+        "manufacturer": "Tata Consumer Products",
+        "customerReviews": "4.3 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "STRONG FLAVOUR",
+          "text": "Rich masala blend for authentic tea taste."
+        },
+        {
+          "title": "PREMIUM TEA LEAVES",
+          "text": "Selected leaves for better aroma."
+        },
+        {
+          "title": "MORNING REFRESHMENT",
+          "text": "Perfect for starting your day."
+        },
+        {
+          "title": "TRUSTED BRAND",
+          "text": "Popular Indian tea choice."
+        },
+        {
+          "title": "RICH COLOUR",
+          "text": "Gives deep strong tea colour."
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "imageUrl": "images/ghee.jpg",
+      "name": "Desi Ghee",
+      "description": "A2 Cow Pure Clarified Butter",
+      "price": 1400,
+      "highlights": {
+        "itemWeight": "1 litre",
+        "numberOfItems": "1",
+        "allergenInformation": "Milk"
+      },
+      "itemDetails": {
+        "brandName": "Organic Farms",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "India",
+        "manufacturer": "Organic Farms Dairy",
+        "customerReviews": "4.7 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "A2 COW MILK",
+          "text": "Prepared from premium A2 milk."
+        },
+        {
+          "title": "BILONA PROCESS",
+          "text": "Traditional hand churned preparation."
+        },
+        {
+          "title": "PURE DESI GHEE",
+          "text": "No additives or preservatives."
+        },
+        {
+          "title": "RICH AROMA",
+          "text": "Natural authentic ghee fragrance."
+        },
+        {
+          "title": "HEALTHY FAT",
+          "text": "Useful for daily cooking and health."
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "imageUrl": "images/mishri.jpg",
+      "name": "Dhaga Mishri",
+      "description": "Indian Sugar, Best for Health",
+      "price": 700,
+      "highlights": {
+        "itemWeight": "1 kg",
+        "numberOfItems": "1",
+        "allergenInformation": "None"
+      },
+      "itemDetails": {
+        "brandName": "Natural Sugar",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "India",
+        "manufacturer": "Natural Sugar Foods",
+        "customerReviews": "4.2 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "TRADITIONAL MISHRI",
+          "text": "Natural crystal sugar preparation."
+        },
+        {
+          "title": "AYURVEDIC USE",
+          "text": "Commonly used in home remedies."
+        },
+        {
+          "title": "PURE SWEETNESS",
+          "text": "Natural sugar taste."
+        },
+        {
+          "title": "PREMIUM QUALITY",
+          "text": "Large clear crystals."
+        },
+        {
+          "title": "HEALTH FRIENDLY",
+          "text": "Better than refined sugar."
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "imageUrl": "images/coffee.jpg",
+      "name": "Filter Coffee",
+      "description": "StarBucks Exclusive",
+      "price": 800,
+      "highlights": {
+        "itemWeight": "500 g",
+        "numberOfItems": "1",
+        "allergenInformation": "None"
+      },
+      "itemDetails": {
+        "brandName": "Starbucks Reserve",
+        "dietType": "Vegetarian",
+        "countryOfOrigin": "Brazil",
+        "manufacturer": "Starbucks Coffee Company",
+        "customerReviews": "4.6 out of 5 stars"
+      },
+      "about": [
+        {
+          "title": "PREMIUM BEANS",
+          "text": "High quality roasted coffee beans."
+        },
+        {
+          "title": "RICH FLAVOUR",
+          "text": "Strong and smooth taste."
+        },
+        {
+          "title": "FILTER BREW",
+          "text": "Ideal for filter coffee preparation."
+        },
+        {
+          "title": "IMPORTED QUALITY",
+          "text": "Selected beans from Brazil."
+        },
+        {
+          "title": "LUXURY EXPERIENCE",
+          "text": "Cafe style premium coffee at home."
+        }
+      ]
+    }
+  ]
+}

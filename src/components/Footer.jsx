@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default function Footer() {
-  return (
-    <div className='bg-dark text-white p-3 text-center'>
-      <p className='m-0'>Copyright &copy; 2026. All Rights Reserved.</p>
-    </div>
-  )
+    return (
+        <div className="container-fluid bg-dark text-white text-center px-0">
+            <p className='fs-6 m-0 py-2'>&copy;2026. All rights reserved. By Naman Sharma.</p>
+        </div>
+    )
 }
