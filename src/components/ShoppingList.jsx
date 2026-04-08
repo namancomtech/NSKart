@@ -43,7 +43,7 @@ export default function ShoppingList() {
                     <Col key={data.id} md="4" className='mb-4'>
                         <div className="card mb-3 h-100 d-flex flex-column">
                             <div className="row g-0">
-                                <div className="col-md-4 text-center align-content-center">
+                                <div className="col-md-4 text-center align-content-center mt-3">
                                     <img src={`${import.meta.env.BASE_URL}${data.imageUrl}`} className="img-fluid rounded-start" alt="" />
                                 </div>
 
