@@ -1,9 +1,11 @@
 import React from 'react'
 import { useLocation } from "react-router-dom";
 import { Row, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { useState, useEffect } from 'react';
 import Footer from './Footer';
+import Header from './Header';
+import "./style.css";
 
 export default function ShoppingCart() {
     const location = useLocation();
@@ -64,8 +66,8 @@ export default function ShoppingCart() {
 
     return (
         <>
-        <div className='w-75 m-auto'>
-            <div className='container mt-3'>
+            <Header cart={items}></Header>
+            <Col className='container mb-5 mt-3 m-auto '  xs={12} md={9}>
                 <Row>
                     <div className='d-flex align-items-center'>
                         <Link to="/" className='text-dark'><i className="bi bi-caret-left-fill fs-3"></i></Link>
@@ -73,27 +75,25 @@ export default function ShoppingCart() {
                     </div>
                     <hr className='border border-dark border-2' />
                 </Row>
-            </div>
-            <div className='container'>
                 <Row>
                     <Col className='d-flex align-items-center justify-content-between'>
                         <div>
                             <h4 className='mt-2'>Shopping Cart</h4>
                             <h6>You have {items ? items.length : 0} items in your cart</h6>
                         </div>
-                        <a className='btn btn-danger' onClick={handleCheckout}>Clear All</a>
+                        <button className='btn btn-danger' onClick={handleCheckout}>Clear All</button>
                     </Col>
-
+                </Row>
                     {items.map((item, index) => (
-                        <div className='border border-light border-3 p-3 d-flex align-items-center justify-content-between mb-4' style={{ borderRadius: "10px 10px" }} key={index}>
-                            <Col md={2}>
-                                <img src={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt={item.name} />
+                        <Row className='border border-light border-3 p-3 d-flex align-items-center justify-content-between mb-1' style={{ borderRadius: "10px 10px" }} key={index}>
+                            <Col xs={4} md={2}>
+                                <img src={`${import.meta.env.BASE_URL}${item.imageUrl}`} style={{ width: "75px" }} alt="" />
                             </Col>
-                            <Col md={5}>
+                            <Col xs={8} md={5}>
                                 <h4>{item.name}</h4>
                                 <p>{item.description}</p>
                             </Col>
-                            <Col className="d-flex align-items-center gap-2" md={2}>
+                            <Col className="d-flex align-items-center gap-2 mt-md-0 mt-3" xs={5} md={2}>
                                 <button
                                     className="btn btn-sm btn-danger"
                                     onClick={() => decreaseQty(item.id)}
@@ -106,13 +106,13 @@ export default function ShoppingCart() {
                                     onClick={() => increaseQty(item.id)}
                                 >+</button>
                             </Col>
-                            <Col md={2}>
+                            <Col xs={5} md={2} className='mt-md-0 mt-3'>
                                 <h5>₹ {item.price * (item.quantity || 1)}</h5>
                             </Col>
-                            <Col md={1}>
-                                <a className='btn btn-danger btn-sm' onClick={() => deleteProduct(item.id)}><i className="bi bi-trash fs-5" ></i></a>
+                            <Col xs={2} md={1} className='mt-md-0 mt-3'>
+                                <button className='btn btn-danger btn-sm' onClick={() => deleteProduct(item.id)}><i className="bi bi-trash fs-5" ></i></button>
                             </Col>
-                        </div>
+                        </Row>
                     ))}
                     <div className='d-flex justify-content-end mb-3'>
                         <div className='col-sm-6 d-flex align-items-center justify-content-between p-2 px-3 ms-3 bg-success text-white' style={{ borderRadius: "10px 10px" }}>
@@ -120,11 +120,8 @@ export default function ShoppingCart() {
                             <h4>₹ {totalPrice} /-</h4>
                         </div>
                     </div>
-
-                </Row>
-            </div>
-        </div>
-        <Footer/>
+            </Col>
+            <Footer/>
         </>
     );
 
