@@ -21,7 +21,7 @@ export default function ShoppingList() {
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}products.json`)
-            .then((res) => res.json())
+            .then((res) => res.json())-100
             .then((data) => setProducts(data.products));
     }, []);
 
@@ -41,14 +41,14 @@ export default function ShoppingList() {
 
                 return (
                     <Col key={data.id} md="4" className='mb-4'>
-                        <div className="card mb-3 h-100">
+                        <div className="card mb-3 h-100 d-flex flex-column">
                             <div className="row g-0">
                                 <div className="col-md-4 text-center align-content-center">
                                     <img src={`${import.meta.env.BASE_URL}${data.imageUrl}`} className="img-fluid rounded-start" alt="" />
                                 </div>
 
-                                <div className="col-md-8">
-                                    <div className="card-body">
+                                <div className="col-md-8 d-flex flex-column">
+                                    <div className="card-body flex-grow-1">
                                         <h5 className="card-title">{data.name}</h5>
                                         <p className="card-text">{data.description}</p>
                                         <p className="card-text">

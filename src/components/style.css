@@ -63,3 +63,11 @@ h4{
 .footer{
     margin-top: auto;
 }
+
+.card-title{
+    min-height: 48px;
+}
+
+.card-text{
+    min-height: 48px;
+}
