@@ -9,7 +9,7 @@ export default function Header({ cart }) {
                 <Row>
                     <Col className='d-flex align-items-center ms-2'>
                         <i className="bi bi-cart-check fs-3 me-1"></i>
-                        <Link to="/" className='text-decoration-none text-dark'>
+                        <Link to="/" className='text-decoration-none text-dark fs-4'>
                             N<sub>S</sub>Kart
                         </Link>
                     </Col>
