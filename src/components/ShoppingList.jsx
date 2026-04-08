@@ -21,7 +21,7 @@ export default function ShoppingList() {
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}products.json`)
-            .then((res) => res.json())-100
+            .then((res) => res.json())
             .then((data) => setProducts(data.products));
     }, []);
 
