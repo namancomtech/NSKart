@@ -30,7 +30,7 @@ export default function Details() {
                 {items && (
                 <>
                     <div className='flex-grow-1'>
-                        <Row className='mx-0 mt-2'>
+                        <Row className='mx-0 mt-4'>
                             <Col lg={{ span: 9, offset: 3 }} className='px-0'>
                                 <h3 className='bg-secondary text-white p-2'>{items.name}</h3>
                             </Col>
